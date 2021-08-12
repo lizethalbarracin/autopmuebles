@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTOP MUEBLES</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="auto.css">
+
+</head>
+<body>
+    <header class="Encabezado">
+        <nav>
+            <div><a href="https://ibb.co/Jc70QkT"><img src="https://i.ibb.co/tHskXC6/In-Shot-20210630-200545728.jpg" alt="In-Shot-20210630-200545728" border="0"></a>
+            </div>
+            <ul>
+                <li><a href="auto.html">Inicio</a></li>
+                <!-- <li>
+                    <a href="#">Contactanos</a>
+                    
+                </li> -->
+                <li>
+                    <a href="#">Categoria</a>
+                    <ul>
+                        <li><a href="alcobas.html">Alcobas</a></li>
+                        <li><a href="salas.html">Salas</a></li>
+                        <li><a href="comedores.html">Comedores</a></li>
+                    </ul>
+                
+                </li>
+                <!-- <li>
+                    <a href="#">Categoria</a>
+                    <ul>
+                        <li><a href="#fut7">Futbol</a></li>
+                        <li><a href="#fut8">Basquetball</a></li>
+                        <li><a href="#fut9">Volleyball</a></li>
+                        <li><a href="#fut10">Futsal</a></li>
+                        <li><a href="#fut11">Patinaje</a></li>
+                    </ul>
+                </li> -->
+                <li>
+                    <a href="#">Direccion</a>
+                    <ul>
+                        <li><a href="#fut12">Maps</a></li>
+                    </ul>
+                
+                </li>
+            </ul>
+
+
+        </nav>
+
+
+
+    </header> <br> <br> <br>
+    <div class="slider">
+        <ul>
+            <li><img src="img/1.jpg" alt=""></li>
+            <div class="slider__content">
+                <h2 class="slider__title">Alcobas, Salas, Comedores</h2>
+                <p class="slider__txt">Sale 20% off</p>
+                <a href="" class="btn-shop">Comprar ahora</a>
+              </div>
+            <li><img src="img/2.jpg" alt=""></li>
+            <li><img src="img/3.jpg" alt=""></li>
+            <li><img src="img/5.jpg" alt=""></li>
+        </ul>
+    </div>
+    <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+    <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+    <br>
+    <br>
+    
+    <div class="page-nav">
+        <h1>Productos</h1>
+        <button id="checkout" class="button-checkout" onclick="pay()">Pagar</button>
+    </div>
+    <div class="page-content">
+        <div class="product-container">
+            <h3>Sala</h3>
+            <img src="img/1.jpg" />
+            <h1>$1.699.000</h1>
+            <button class="button-add" onclick="add('product-sala1', 1.699,000)">Añadir al carrito</button>
+            <button class="button-rest" onclick="rest('product-1', 1.699,000)">Eliminar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Comedor</h3>
+            <img src="img/2.jpg" />
+            <h1>$1.779.900</h1>
+            <button class="button-add" onclick="add('product-comedor2', 1.779,900)">Añadir al carrito</button>
+            <button class="button-rest" onclick="rest('product-2', 1.779,900)">Eliminar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Comedor</h3>
+            <img src="img/3.jpg" />
+            <h1>$1.800.000</h1>
+            <button class="button-add" onclick="add('product-comedor3', 1.800,000)">Añadir al carrito</button>
+            <button class="button-rest" onclick="rest('product-3', 1.800,000)">Eliminar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Alcoba</h3>
+            <img src="img/5.jpg" />
+            <h1>$1.200.000</h1>
+            <button class="button-add" onclick="add('product-alcoba1', 1.200,000)">Añadir al carrito</button>
+            <button class="button-rest" onclick="rest('product-1', 1.200,000)">Eliminar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Alcoba</h3>
+            <img src="img/7.jpg" />
+            <h1>$1.500.000</h1>
+            <button class="button-add" onclick="add('product-alcoba2', 1.500,000)">Añadir al carrito</button>
+            <button class="button-rest" onclick="rest('product-2', 1.500,000)">Eliminar</button>
+        </div>
+
+        <div class="product-container">
+            <h3>Comedor</h3>
+            <img src="img/8.jpg" />
+            <h1>$2.000.000</h1>
+            <button class="button-add" onclick="add('product-comedor3', 2.000,000)">Añadir al carrito</button>
+            <button class="button-rest" onclick="rest('product-3', 2.000,000)">Eliminar</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer__grid">
+            <nav class="nav nav--footer">
+                <a class="nav__items nav__items--footer" href="">Inicio</a>
+                <a class="nav__items nav__items--footer" href="crearc.html">Crear Cuenta</a>
+                <a class="nav__items nav__items--footer" href="ingresar.html">Ingresar</a>
+                <a class="nav__items nav__items--footer" href="">Mis Compras</a>
+            </nav>
+
+            <section class="footer__contact">
+                <h3 class="footer__title">Contáctanos</h3>
+                <div class="footer__icons">
+                    <span class="footer__container-icons">
+                        <a class="fab fa-facebook-f footer__icons" href="#"></a>
+                    </span>
+
+                    <span class="footer__container-icons">
+                        <a class="fab fa-whatsapp footer__icons" href="#"></a>
+                    </span>
+
+                    <span class="footer__container-icons">
+                        <a class="far fa-envelope footer__icons" href="#"></a>
+                    </span>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+    
+   <script src="https://kit.fontawesome.com/602ab5492c.js" crossorigin="anonymous"></script>
+   
+   <script src="auto.js"></script>
+    
+</body>
+</html>
